@@ -1,0 +1,23 @@
+.slider{
+    min-width: 80%;
+    display: flex;
+    margin: auto;
+    position: relative;
+    justify-items: center;
+    .slider-images{
+       width: 100%;
+       display:flex;
+       overflow: hidden;
+    }
+    .arrow{
+        width: 20px;
+        cursor: pointer;
+    }
+}
+
+@media(max-width:550px){
+    .slider{
+        max-width: 100%;
+        
+    }
+}
