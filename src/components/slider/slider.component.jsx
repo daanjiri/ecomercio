@@ -53,7 +53,7 @@ class Slider extends React.Component{
               <ArrowPrev className='arrow' onClick={this.handlePrev}/>
 
                 <div className={`slider-images`} ref={this.myRef}>
-                    {items.map(({id, ...otherItemProps})=>(<CollectionItem key={id} {...otherItemProps}/>))}
+                    {items.map((item)=>(<CollectionItem key={item.id} item={item}/>))}
                 </div>
 
               <ArrowNext className='arrow' onClick={this.handleNext}/>
